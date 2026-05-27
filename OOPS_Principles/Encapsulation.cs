@@ -32,13 +32,14 @@ namespace OOPS_Principles
                     {
                         balance -= amount;
                     }
-                    else
-                    {
-                        { 
-                            Console.WriteLine("please enter  valid pin");
-                        }
-                    }
                 }
+                else
+                {
+
+                    Console.WriteLine("please enter  valid pin");
+                }
+
+                
             }
             public double getbalance()
             {
@@ -50,7 +51,11 @@ namespace OOPS_Principles
             Account acc=new Account();
             acc.deposit(6000);
             acc.withdraw(2000);
-           Console.WriteLine(acc.getbalance());
+            Console.WriteLine("your  Avaliable balance is:");
+            Console.WriteLine("-----------------------------");
+            Console.WriteLine(acc.getbalance());
+            Console.WriteLine("-----------------------------");
+
         }
     }
 }
