@@ -25,19 +25,18 @@ namespace OOPS_Principles
             {
                 Console.WriteLine("Enter your pin:");
                 pin = Convert.ToInt32(Console.ReadLine());
-                if (pin == 963963)
-                {
+                
 
-                    if (amount <= balance)
+                    if (pin == 963963 && amount <= balance)
                     {
                         balance -= amount;
                     }
-                }
-                else
-                {
+                
+                   else
+                   {
 
                     Console.WriteLine("please enter  valid pin");
-                }
+                   }
 
                 
             }
