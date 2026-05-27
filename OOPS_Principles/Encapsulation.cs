@@ -11,6 +11,7 @@ namespace OOPS_Principles
         class Account
         {
             private double balance;
+            private int pin;
 
         public void deposit(double amount)
             {
@@ -22,9 +23,21 @@ namespace OOPS_Principles
 
             public void withdraw( double amount)
             {
-                if (amount <= balance)
+                Console.WriteLine("Enter your pin:");
+                pin = Convert.ToInt32(Console.ReadLine());
+                if (pin == 963963)
                 {
-                    balance -= amount;
+
+                    if (amount <= balance)
+                    {
+                        balance -= amount;
+                    }
+                    else
+                    {
+                        { 
+                            Console.WriteLine("please enter  valid pin");
+                        }
+                    }
                 }
             }
             public double getbalance()
