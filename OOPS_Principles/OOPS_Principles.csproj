@@ -49,6 +49,7 @@
     <Compile Include="AbstractVirtualCase.cs" />
     <Compile Include="Encapsulation.cs" />
     <Compile Include="Hosiptal_recrd.cs" />
+    <Compile Include="InhertingAbstarctClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
